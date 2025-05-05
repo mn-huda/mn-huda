@@ -1,51 +1,89 @@
 ---
-import BaseHead from '../components/BaseHead.astro'
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+
 ---
 
-<!doctype html>
 <html lang='en'>
   <head>
-    <BaseHead
-      title={SITE_TITLE}
-      description={SITE_DESCRIPTION}
+    <meta charset='utf-8' />
+    <link
+      rel='icon'
+      type='image/svg+xml'
+      href='/favicon.svg'
     />
+    <meta
+      name='viewport'
+      content='width=device-width'
+    />
+    <meta
+      name='generator'
+      content={Astro.generator}
+    />
+    <title>Md. Nazmul Huda</title>
+    <link
+      rel='preconnect'
+      href='https://fonts.googleapis.com'
+    />
+    <link
+      rel='preconnect'
+      href='https://fonts.gstatic.com'
+      crossorigin
+    />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Outfit:wght@100..900&display=swap'
+      rel='stylesheet'
+    />
+    <style>
+      :root {
+        font-family: 'Outfit', sans-serif;
+        font-optical-sizing: auto;
+        font-size: 150%;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+      }
+      a {
+        color: darkgray;
+      }
+      a:active,
+      a:focus,
+      a:hover {
+        color: gray;
+      }
+      h1 {
+        font-family: 'Corinthia', cursive;
+        font-size: 4.24rem;
+        font-weight: 400;
+      }
+      .home-links {
+        display: flex;
+        font-size: 0.62rem;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+    </style>
   </head>
   <body>
-    <Header />
-    <main>
-      <h1>আমি মোঃ নাজমূল হুদা</h1>
-      <p>আমি একজন বিজনেস অ্যানালিস্ট...</p>
-      <p>
-        বিগত ১১-বছর ধরে বিভিন্ন এনজিও এবং অলাভজনক প্রতিষ্ঠানের সাথে সামাজিক ও
-        পরিবেশ উন্নয়ন সম্পর্কিত ব্যবসা তৈরি ও বৃদ্ধিতে বিভিন্ন ক্ষুদ্র, মাঝারি ও
-        কর্পোরেট ব্যবসার সাথে কাজ করে আসছি।
-      </p>
-      <p>
-        এই কাজগুলো করতে গিয়ে আমি দারুনভাবে ডকুমেন্ট তৈরি করে একটা ধারণাকে লেখার
-        মাধ্যমে প্রস্তুত করা, স্প্রেডশিটের মাধ্যমে বিভিন্ন ধরণের অ্যানালিসিস
-        দাঁড়া করানো এবং বিভিন্ন ধরণের তথ্যকে সুন্দরভাবে ডিজাইনকৃত প্রেজেন্টেশনের
-        মাধ্যমে উপস্থাপন করায় নিজেকে দক্ষ পর্যায়ে নিয়ে গেছি।
-      </p>
-      <p>
-        শুধু তাইই নয়, আমি বিজনেস ডেভেলপমেন্ট, ফাইন্যান্সিয়াল মডেলিং, ডাটা
-        অ্যানালিসিস, ডিজিটাল মার্কেটিং এর পাশাপাশি ওয়েব ডেভেলপমেন্টের কাজও
-        শিখেছি অনলাইনে বিভিন্ন ধরণের তথ্য উপস্থাপনের মাধ্যমে বিজনেস কমিউনিকেশন
-        এর ডিজিটাল দিকগুলোকে কাজে লাগাতে।
-      </p>
-      <p>
-        বর্তমানে আমি লেখালেখির কোর্স করছি, আমার অভিজ্ঞতাসমূহ সবার সামনে তুলে
-        ধরতে আমি যা জানি তা সবার মাঝে ছড়িয়ে দিতে।
-      </p>
-      <p>
-        আমার সিভি দেখতে ইচ্ছে হলে এখানে <a href='/resume_md_nazmul_huda.pdf'
-          >ক্লিক করে ডাউনলোড</a
-        > করতে পারবেন।
-      </p>
-      <p>আশা করছি আমার এই অভিযাত্রায় আপনিও সামিল হবেন।</p>
-    </main>
-    <Footer />
+    <h1>Md. Nazmul Huda</h1>
+    <p>
+      Empowering businesses to draft plans, build financial models, and present
+      results with impact.
+    </p>
+    <p></p>
+    <p class='home-links'>
+      <a href='mailto:me@nazmul-huda.com'>Mail me!</a>
+      <a href='/resume-nazmul.pdf'>Get my resume!</a>
+    </p>
   </body>
 </html>
